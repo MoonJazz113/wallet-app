@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Maxim
+      changes:
+        - sql:
+            sql: |
+              CREATE TABLE IF NOT EXISTS public.wallets (
+                id UUID DEFAULT gen_random_uuid() NOT NULL,
+                balance DECIMAL NOT NULL,
+                CONSTRAINT wallets_pkey PRIMARY KEY (id)
+              );

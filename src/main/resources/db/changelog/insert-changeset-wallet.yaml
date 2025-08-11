@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Maxim
+      changes:
+        - sql:
+            sql: "INSERT INTO wallets (id, balance) VALUES (gen_random_uuid(), 1000);"
