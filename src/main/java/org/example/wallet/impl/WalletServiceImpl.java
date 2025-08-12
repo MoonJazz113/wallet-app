@@ -1,11 +1,11 @@
 package org.example.wallet.impl;
 
 import jakarta.transaction.Transactional;
-import org.example.wallet.WalletRepository;
+import org.example.wallet.repository.WalletRepository;
 import org.example.wallet.dto.WalletBalanceResponse;
 import org.example.wallet.dto.WalletOperationRequest;
-import org.example.wallet.exception.WalletNoCash;
-import org.example.wallet.exception.WalletNotFound;
+import org.example.wallet.dto.exception.WalletNoCash;
+import org.example.wallet.dto.exception.WalletNotFound;
 import org.example.wallet.service.WalletService;
 import org.springframework.stereotype.Service;
 

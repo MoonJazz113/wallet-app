@@ -1,4 +1,4 @@
-package org.example.wallet;
+package org.example.wallet.dto.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

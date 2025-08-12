@@ -1,8 +1,8 @@
-package org.example.wallet.exception.handler;
+package org.example.wallet.handler;
 
-import org.example.wallet.exception.WalletNoCash;
-import org.example.wallet.exception.WalletNotFound;
-import org.example.wallet.exception.dto.ErrorDto;
+import org.example.wallet.dto.exception.WalletNoCash;
+import org.example.wallet.dto.exception.WalletNotFound;
+import org.example.wallet.dto.ErrorDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;

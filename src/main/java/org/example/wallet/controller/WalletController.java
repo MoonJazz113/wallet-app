@@ -4,7 +4,6 @@ package org.example.wallet.controller;
 import org.example.wallet.dto.WalletBalanceResponse;
 import org.example.wallet.dto.WalletOperationRequest;
 import org.example.wallet.impl.WalletServiceImpl;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
@@ -20,9 +19,8 @@ public class WalletController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> updateBalance(@RequestBody WalletOperationRequest request) {
+    public void updateBalance(@RequestBody WalletOperationRequest request) {
         walletService.performOperation(request);
-        return ResponseEntity.ok().build();
     }
 
     @GetMapping("/{walletId}")

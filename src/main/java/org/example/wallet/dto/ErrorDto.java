@@ -1,4 +1,4 @@
-package org.example.wallet.exception.dto;
+package org.example.wallet.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

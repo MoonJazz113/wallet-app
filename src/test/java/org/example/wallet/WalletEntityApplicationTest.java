@@ -1,6 +1,8 @@
 package org.example.wallet;
 
 import org.example.wallet.dto.WalletBalanceResponse;
+import org.example.wallet.dto.entity.WalletEntity;
+import org.example.wallet.repository.WalletRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +28,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @Testcontainers
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class WalletEntityApplicationTests {
+class WalletEntityApplicationTest {
 
     @Container
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>(DockerImageName.parse("postgres:15"))
