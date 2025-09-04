@@ -3,7 +3,7 @@ package org.example.wallet.controller;
 
 import org.example.wallet.dto.WalletBalanceResponse;
 import org.example.wallet.dto.WalletOperationRequest;
-import org.example.wallet.impl.WalletServiceImpl;
+import org.example.wallet.service.impl.WalletServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;

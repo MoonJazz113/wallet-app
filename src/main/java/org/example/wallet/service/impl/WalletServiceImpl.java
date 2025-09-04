@@ -1,4 +1,4 @@
-package org.example.wallet.impl;
+package org.example.wallet.service.impl;
 
 import jakarta.transaction.Transactional;
 import org.example.wallet.repository.WalletRepository;
